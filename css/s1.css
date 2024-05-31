@@ -1,0 +1,29 @@
+*{
+    background-color: bisque;
+}/* '*' is a Universal selector and is used mainly for css reset*/
+body{
+    font-size: 22px;
+}
+button, textarea, input, select{
+    font: inherit;
+} /*forms don't come under the body tag and hence have to be specified seperately or by using inherit which inherits the properties of body*/
+main{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1, h2{
+    color:blue;
+}
+p{
+    color:blueviolet;
+}
+p span{
+    background-color: gold;
+    text-transform: uppercase;
+} /* this searches for the span element inside the paragraph element, instead of this we use classes so just use .highlight as class in this case */
+.gray{
+    color:gray;
+} /* the specificty order follows ids>classes>elements and thus ids are given more priority, you can look up the specificity order in the browser */
+#second{
+    font-style: italic;
+} /* generally classes are used rather than ids */
+/* css follows cascading and hence if you use the same selector twice it will follow the code from the second one if there are conflicting property values */
